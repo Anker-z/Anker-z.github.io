@@ -105,5 +105,5 @@ deploy:
   type: git
   repo: 
       github: https://github.com/Anker-z/Anker-z.github.io.git
-      gitee: https://gitee.com/anker-z/blog.git
+      gitee:  git@gitee.com:anker-z/blog.git
   branch: main
