@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 白武武的博客            #网站标题
+title: Anker         #网站标题
 subtitle: '事在人为'          #网站副标题
 description: ''             #网站描述
 keywords:                   
 author: Anker               #您的名字
-language: zh-cn             #网站使用的语言
+language: zh-CN            #网站使用的语言
 timezone: ''
 
 # URL
@@ -97,13 +97,13 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
   repo: 
-      github: https://github.com/Anker-z/Anker-z.github.io.git
-      gitee:  git@gitee.com:anker-z/blog.git
-  branch: main
+      github: https://github.com/Anker-z/Anker-z.github.io.git,main
+      gitee:  git@gitee.com:anker-z/blog.git,master
+ # branch: main

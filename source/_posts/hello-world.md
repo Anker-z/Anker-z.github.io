@@ -1,38 +1,50 @@
 ---
-title: Hello World
+title: jenkins 构建时选择分支
+date: 2022-8-8
+updated:
+type: jenkins
+comments:
+description:
+keywords:
+top_img:
+mathjax:
+katex:
+aside:
+aplayer:
+highlight_shrink:
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+### jenkins 构建时选择分支
 
-### Create a new post
+Jenkins选择分支需要安装 Git Parameter 插件
 
-``` bash
-$ hexo new "My New Post"
-```
+![插件](https://cdn.baiwuwu.com/%E6%8F%92%E4%BB%B6.png)
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+安装完毕之后在打开当前工程的配置选项
 
-### Run server
+![配置](https://cdn.baiwuwu.com/%E9%85%8D%E7%BD%AE.png)
 
-``` bash
-$ hexo server
-```
+然后找到**General**，选中`This project is parameterized`
 
-More info: [Server](https://hexo.io/docs/server.html)
+![img](https://cdn.baiwuwu.com/2261659777344_.pic.jpg)
 
-### Generate static files
+点击添加参数按钮，选择 **Git Parameter**
 
-``` bash
-$ hexo generate
-```
+![img](https://cdn.baiwuwu.com/2271659777373_.pic_hd.jpg)
 
-More info: [Generating](https://hexo.io/docs/generating.html)
+输入名称变量为**branch**，输入描述，参数类型选择**分支或标签**，默认值可以填写自己默认的分支
 
-### Deploy to remote sites
+![img](https://cdn.baiwuwu.com/2281659777842_.pic_hd.jpg)
 
-``` bash
-$ hexo deploy
-```
+然后切换到源码管理选项，在指定分支处填入刚刚的名称变量 **$branch**，然后保存即可。
 
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+![img](https://cdn.baiwuwu.com/2291659778018_.pic_hd.jpg)
+
+最后返回到工程，点击`build with Paramenters`, 就可以选择项目的分支部署啦
+
+![img](https://cdn.baiwuwu.com/2301659778074_.pic_hd.jpg)
+
+
+
+
+
