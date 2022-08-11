@@ -1,0 +1,36 @@
+/* 修改导航 */
+#page-header #menus{
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin-left: -100px;
+}
+#page-header #blog_name{
+    width: 100px;
+    flex: none !important;
+}
+#nav .site-page:not(.child):after{
+    height: 30px;
+    left: -5px;
+    right: -5px;
+    width: auto;
+    border-radius: 6px;
+    opacity: 0;
+}
+#nav .site-page:hover:after{
+    opacity: 1;
+    width: auto !important;
+}
+#page-header.not-top-img #nav a:hover{
+    color:#fff;
+}
+
+/* 底部文字 */
+#footer{
+    background: transparent;
+}
+#footer-wrap{
+    text-shadow: 1px 1px 1px #ddd;
+    color: var(--hl-color);
+}
