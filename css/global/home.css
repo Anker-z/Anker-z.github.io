@@ -34,3 +34,7 @@
     text-shadow: 1px 1px 1px #ddd;
     color: var(--hl-color);
 }
+/* 调节亮暗模式按钮 */
+.sidebar-icon{
+    color:var(--font-color)
+}
