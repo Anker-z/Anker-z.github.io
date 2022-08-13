@@ -1,40 +1,138 @@
+/* 全局变量 */
+:root {
+  --color-site-body: #f4f4f4;
+  --color-site-bg: #f4f4f4;
+}
+[data-theme='dark']{
+    --color-site-body: var(--global-bg);
+    --color-site-bg: var(--global-bg);
+}
 /* 修改导航 */
-#page-header #menus{
-    flex: 1;
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    margin-left: -100px;
+#page-header #menus {
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  margin-left: -100px;
 }
-#page-header #blog_name{
-    width: 100px;
-    flex: none !important;
+#page-header #blog_name {
+  width: 100px;
+  flex: none !important;
+  position: relative;
 }
-#nav .site-page:not(.child):after{
-    height: 30px;
-    left: -5px;
-    right: -5px;
-    width: auto;
-    border-radius: 6px;
-    opacity: 0;
+#nav .site-page:not(.child):after {
+  height: 30px;
+  left: -5px;
+  right: -5px;
+  width: auto;
+  border-radius: 6px;
+  opacity: 0;
 }
-#nav .site-page:hover:after{
-    opacity: 1;
-    width: auto !important;
+#nav .site-page:hover:after {
+  opacity: 1;
+  width: auto !important;
 }
-#page-header.not-top-img #nav a:hover{
-    color:#fff;
+#page-header.not-top-img #nav a:hover {
+  color: #fff;
 }
 
 /* 底部文字 */
-#footer{
-    background: transparent;
+#footer {
+  background: transparent;
 }
-#footer-wrap{
-    text-shadow: 1px 1px 1px #ddd;
-    color: var(--hl-color);
+#footer-wrap {
+  color: var(--hl-color);
 }
 /* 调节亮暗模式按钮 */
-.sidebar-icon{
-    color:var(--font-color)
+.sidebar-icon {
+  color: var(--font-color);
+}
+/* nav模糊背景 */
+#nav {
+  backdrop-filter: saturate(180%) blur(20px);
+}
+/* 去除卡片box-shadow */
+.cardHover, .layout > div:first-child:not(.recent-posts), #recent-posts > .recent-post-item, #aside-content .card-widget, .layout > .recent-posts .pagination > *:not(.space){
+    box-shadow: none;
+}
+/*归档选中 */
+#aside-content .card-archives ul.card-archive-list > .card-archive-list-item a:hover, #aside-content .card-categories ul.card-category-list > .card-category-list-item a:hover,#sidebar #sidebar-menus .menus_items .site-page:hover{
+    color: var(--btn-color);
+    background-color: var(--btn-hover-color);
+    border-radius: 4px;
+}
+/* 归档选中 */
+#aside-content .card-archives ul.card-archive-list > .card-archive-list-item a, #aside-content .card-categories ul.card-category-list > .card-category-list-item a{
+    border-radius: 4px;
+}
+/* 头像hover */
+.avatar-img img:hover{
+    transform: scale(1.2);
+}
+/* 时间轴 */
+.article-sort-item.year{
+    font-size: 1.43em;
+    position: relative;
+    width: 100%;
+    background: var(--card-bg);
+    margin-left: -45px;
+    margin-bottom: 10px;
+}
+.article-sort-item.year::before{
+    display: none;
+}
+.article-sort-item-info{
+    display: flex;
+    align-items: center;
+}
+
+.article-sort-item-time{
+    margin-right: 20px;
+    min-width: 95px;
+}
+.article-sort-item-title{
+    flex: 1;
+    -webkit-line-clamp: 1;
+    word-break: break-all;
+}
+.article-sort-item-title:hover,.article-sort-item:hover .article-sort-item-time{
+    color: var(--btn-hover-color);
+}
+
+.article-sort-item.no-article-cover{
+    height: auto;
+    margin-bottom: 20px;
+}
+.article-sort-title{
+    display: none;
+}
+/* 时间轴分页 */
+#pagination .pagination{
+    text-align: right;
+}
+#pagination .page-number{
+    text-align: center;
+    border-radius: 4px;
+}
+#pagination .extend{
+    padding: 4px;
+    border-radius: 4px;
+    max-width: 24px;
+    max-height: 24px;
+}
+#pagination .page-number:hover,#pagination .extend:hover{
+    color: var(--btn-color);
+    background-color: var(--btn-hover-color);
+    /* border-radius: 4px; */
+}
+/* 侧边栏item */
+#aside-content .card-webinfo .webinfo .webinfo-item .item-name{
+    min-width: 112px;
+}
+#aside-content .card-webinfo .webinfo .webinfo-item .item-count{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    text-align: right;
 }
