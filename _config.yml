@@ -4,8 +4,8 @@
 
 # Site
 title: Anker         #网站标题
-subtitle: '事在人为'          #网站副标题
-description: ''             #网站描述
+subtitle: 事在人为         #网站副标题
+description: 事在人为             #网站描述
 keywords:                   
 author: Anker               #您的名字
 language: zh-CN            #网站使用的语言
@@ -107,3 +107,16 @@ deploy:
       github: https://github.com/Anker-z/Anker-z.github.io.git,main
       gitee:  git@gitee.com:anker-z/blog.git,master
  # branch: main
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  template:
+
+# hexo-admin authentification
+admin:
+  username: anker
+  password_hash: $2a$10$Ka3hhCxuxLbJKj.rTbA0.ePHz6AkApVxrYGjSPE626OxmXDv68F/2
+  secret: bww1215
+
