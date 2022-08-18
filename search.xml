@@ -4,19 +4,6 @@
   
     
     <entry>
-      <title>新的博客</title>
-      <link href="/2022/08/08/newBlog/"/>
-      <url>/2022/08/08/newBlog/</url>
-      
-        <content type="html"><![CDATA[<p>新的博客</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>jenkins 构建时选择分支</title>
       <link href="/2022/08/08/jenkinsPostList/"/>
       <url>/2022/08/08/jenkinsPostList/</url>
@@ -38,6 +25,19 @@
             <tag> Jenkins </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>新的博客</title>
+      <link href="/2022/08/08/newBlog/"/>
+      <url>/2022/08/08/newBlog/</url>
+      
+        <content type="html"><![CDATA[<p>新的博客</p>]]></content>
+      
+      
       
     </entry>
     
