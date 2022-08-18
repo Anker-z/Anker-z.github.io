@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>新的博客</title>
+      <link href="/2022/08/08/newBlog/"/>
+      <url>/2022/08/08/newBlog/</url>
+      
+        <content type="html"><![CDATA[<p>新的博客</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>jenkins 构建时选择分支</title>
+      <link href="/2022/08/08/jenkinsPostList/"/>
+      <url>/2022/08/08/jenkinsPostList/</url>
+      
+        <content type="html"><![CDATA[<h4 id="安装Git-Parameter"><a href="#安装Git-Parameter" class="headerlink" title="安装Git Parameter"></a>安装Git Parameter</h4><p>Jenkins选择分支需要安装 Git Parameter 插件</p><p><img src="https://cdn.baiwuwu.com/%E6%8F%92%E4%BB%B6.png" alt="插件"></p><h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p> 安装完毕之后在打开当前工程的配置选项</p><p><img src="https://cdn.baiwuwu.com/%E9%85%8D%E7%BD%AE.png" alt="配置"></p><p>然后找到<strong>General</strong>，选中<code>This project is parameterized</code></p><p><img src="https://cdn.baiwuwu.com/2261659777344_.pic.jpg" alt="img"></p><p> 点击添加参数按钮，选择 <strong>Git Parameter</strong></p><p><img src="https://cdn.baiwuwu.com/2271659777373_.pic_hd.jpg" alt="img"></p><p>输入名称变量为<strong>branch</strong>，输入描述，参数类型选择<strong>分支或标签</strong>，默认值可以填写自己默认的分支</p><p><img src="https://cdn.baiwuwu.com/2281659777842_.pic_hd.jpg" alt="img"></p><p>然后切换到源码管理选项，在指定分支处填入刚刚的名称变量 <strong>$branch</strong>，然后保存即可。</p><p><img src="https://cdn.baiwuwu.com/2291659778018_.pic_hd.jpg" alt="img"></p><h4 id="启动，选择分支"><a href="#启动，选择分支" class="headerlink" title="启动，选择分支"></a>启动，选择分支</h4><p>最后返回到工程，点击<code>build with Paramenters</code>, 就可以选择项目的分支部署啦</p><p><img src="https://cdn.baiwuwu.com/2301659778074_.pic_hd.jpg" alt="img"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Jenkins </category>
+          
+          <category> 部署 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Jenkins </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
