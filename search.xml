@@ -4,11 +4,65 @@
   
     
     <entry>
+      <title>使用Jenkins部署Hexo博客项目</title>
+      <link href="/2022/08/23/jenkinsToHexo/"/>
+      <url>/2022/08/23/jenkinsToHexo/</url>
+      
+        <content type="html"><![CDATA[<h3 id="将本地博客源码上传到GitHub"><a href="#将本地博客源码上传到GitHub" class="headerlink" title="将本地博客源码上传到GitHub"></a>将本地博客源码上传到GitHub</h3><h3 id="创建任务"><a href="#创建任务" class="headerlink" title="创建任务"></a>创建任务</h3><p>新建Jenkins 名称为blog的<code>Freestyle project</code> 任务</p><p>点击确定创建</p><p>添加完凭证之后 报错 显示是链接远程库错误，状态码128 ，身份验证失败</p><p><code>远程：2021 8月13日取消了对密码验证的支持 远程：请查看https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls获取有关当前推荐的身份验证模式的信息。</code></p><p>打开链接</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Jenkins </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Jenkins </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>替换博客字体为HarmonyOS_Sans 字体</title>
+      <link href="/2022/08/19/HarmonyOS-Sans/"/>
+      <url>/2022/08/19/HarmonyOS-Sans/</url>
+      
+        <content type="html"><![CDATA[<h2 id="下载字体文件"><a href="#下载字体文件" class="headerlink" title="下载字体文件"></a>下载字体文件</h2><p><a href="http://file.baiwuwu.com/blog/HarmonyOS_Sans_SC_Medium.subset.woff2">HarmonyOS_Sans</a></p><h2 id="替换字体"><a href="#替换字体" class="headerlink" title="替换字体"></a>替换字体</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@font-face</span>&#123;<span class="attribute">font-family</span>:HarmonyOS_Sans_SC_Medium;<span class="attribute">font-style</span>:normal;<span class="attribute">font-display</span>:swap;</span><br><span class="line"><span class="attribute">src</span>:<span class="built_in">url</span>(<span class="string">输入文件的链接</span>) <span class="built_in">format</span>(<span class="string">&#x27;woff2&#x27;</span>)&#125;</span><br><span class="line">*&#123;<span class="attribute">font-family</span>:HarmonyOS_Sans_SC_Medium&#125;</span><br><span class="line"><span class="selector-tag">body</span> &#123;<span class="attribute">font-family</span>: HarmonyOS<span class="meta">!important</span>;&#125;</span><br></pre></td></tr></table></figure><p><code>文件的链接为刚才下载的文件</code></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 鸿蒙字体 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 鸿蒙字体 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>jenkins 构建时选择分支</title>
       <link href="/2022/08/08/jenkinsPostList/"/>
       <url>/2022/08/08/jenkinsPostList/</url>
       
-        <content type="html"><![CDATA[<h4 id="安装Git-Parameter"><a href="#安装Git-Parameter" class="headerlink" title="安装Git Parameter"></a>安装Git Parameter</h4><p>Jenkins选择分支需要安装 Git Parameter 插件</p><p><img src="https://cdn.baiwuwu.com/%E6%8F%92%E4%BB%B6.png" alt="插件"></p><h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p> 安装完毕之后在打开当前工程的配置选项</p><p><img src="https://cdn.baiwuwu.com/%E9%85%8D%E7%BD%AE.png" alt="配置"></p><p>然后找到<strong>General</strong>，选中<code>This project is parameterized</code></p><p><img src="https://cdn.baiwuwu.com/2261659777344_.pic.jpg" alt="img"></p><p> 点击添加参数按钮，选择 <strong>Git Parameter</strong></p><p><img src="https://cdn.baiwuwu.com/2271659777373_.pic_hd.jpg" alt="img"></p><p>输入名称变量为<strong>branch</strong>，输入描述，参数类型选择<strong>分支或标签</strong>，默认值可以填写自己默认的分支</p><p><img src="https://cdn.baiwuwu.com/2281659777842_.pic_hd.jpg" alt="img"></p><p>然后切换到源码管理选项，在指定分支处填入刚刚的名称变量 <strong>$branch</strong>，然后保存即可。</p><p><img src="https://cdn.baiwuwu.com/2291659778018_.pic_hd.jpg" alt="img"></p><h4 id="启动，选择分支"><a href="#启动，选择分支" class="headerlink" title="启动，选择分支"></a>启动，选择分支</h4><p>最后返回到工程，点击<code>build with Paramenters</code>, 就可以选择项目的分支部署啦</p><p><img src="https://cdn.baiwuwu.com/2301659778074_.pic_hd.jpg" alt="img"></p>]]></content>
+        <content type="html"><![CDATA[<h4 id="安装Git-Parameter"><a href="#安装Git-Parameter" class="headerlink" title="安装Git Parameter"></a>安装Git Parameter</h4><p>Jenkins选择分支需要安装 Git Parameter 插件</p><p><img src="http://file.baiwuwu.com/%E6%8F%92%E4%BB%B6.png" alt="插件"></p><h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p> 安装完毕之后在打开当前工程的配置选项</p><p><img src="http://file.baiwuwu.com/%E9%85%8D%E7%BD%AE.png" alt="配置"></p><p>然后找到<strong>General</strong>，选中<code>This project is parameterized</code></p><p><img src="http://file.baiwuwu.com/2261659777344_.pic.jpg" alt="img"></p><p> 点击添加参数按钮，选择 <strong>Git Parameter</strong></p><p><img src="http://file.baiwuwu.com/2271659777373_.pic_hd.jpg" alt="img"></p><p>输入名称变量为<strong>branch</strong>，输入描述，参数类型选择<strong>分支或标签</strong>，默认值可以填写自己默认的分支</p><p><img src="http://file.baiwuwu.com/2281659777842_.pic_hd.jpg" alt="img"></p><p>然后切换到源码管理选项，在指定分支处填入刚刚的名称变量 <strong>$branch</strong>，然后保存即可。</p><p><img src="http://file.baiwuwu.com/2291659778018_.pic_hd.jpg" alt="img"></p><h4 id="启动，选择分支"><a href="#启动，选择分支" class="headerlink" title="启动，选择分支"></a>启动，选择分支</h4><p>最后返回到工程，点击<code>build with Paramenters</code>, 就可以选择项目的分支部署啦</p><p><img src="http://file.baiwuwu.com/2301659778074_.pic_hd.jpg" alt="img"></p>]]></content>
       
       
       <categories>
@@ -25,19 +79,6 @@
             <tag> Jenkins </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>新的博客</title>
-      <link href="/2022/08/08/newBlog/"/>
-      <url>/2022/08/08/newBlog/</url>
-      
-        <content type="html"><![CDATA[<p>新的博客</p>]]></content>
-      
-      
       
     </entry>
     
